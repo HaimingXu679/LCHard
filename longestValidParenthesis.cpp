@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/longest-valid-parentheses/solution/
 
+// Altered knapsack algorithm
+
 class Solution {
 public:
     int knap(string &s, int value, int l, bool skip, int i) {
