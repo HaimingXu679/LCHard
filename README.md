@@ -1,3 +1,2 @@
 # Leetcode
-- Some of my Leetcode solutions to LC Hard problems
-- Links to problems included
+A place to store my solutions to LC hard problems.
