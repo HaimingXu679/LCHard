@@ -1,4 +1,6 @@
-// https://leetcode.com/problems/freedom-trail/ 
+// https://leetcode.com/problems/freedom-trail/
+
+// Dynamic programming solution
 
 class Solution {
 public:
