@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 
+// Dynamic programming solution
+
 class Solution {
 public:
     int maxProfit(int k, vector<int>& prices) {
