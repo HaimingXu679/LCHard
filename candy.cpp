@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/candy/
 
+// ad-hoc
+
 class Solution {
 public:
     int candy(vector<int>& ratings) {
