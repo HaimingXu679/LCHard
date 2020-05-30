@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/longest-valid-parentheses/solution/
+// https://leetcode.com/problems/longest-valid-parentheses/
 
 // Altered knapsack algorithm
 
