@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/trapping-rain-water/
 
+// Mathematics solution; ad-hoc
+
 class Solution {
 public:
     int trap(vector<int>& height) {
