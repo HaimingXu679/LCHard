@@ -5,7 +5,7 @@
 class Solution {
 public:
     int knap(string &s, int value, int l, bool skip, int i) {
-        if (i == s.length() || value > s.length() / 2) 
+        if (i == s.length() || value > s.length() / 2 || value < -1 * s.length() / 2)
             return value == 0 ? l : 0;
         if (value == 0)
             return s[i] == ')' ? (!skip ? max(l, knap(s, 0, l, skip, i + 1)) : l) : max(l, !skip ? 
