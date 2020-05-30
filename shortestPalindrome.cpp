@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/shortest-palindrome/
 
+// Altered version of Manacher's Algorithm
+
 class Solution {
 public:
     string shortestPalindrome(string s) {
