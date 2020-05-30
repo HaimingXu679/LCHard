@@ -1,2 +1,2 @@
-# Google
-Stuff from internship
+# Leetcode
+Some of my Leetcode solutions
