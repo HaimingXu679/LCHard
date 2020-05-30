@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/reverse-nodes-in-k-group/
 
-// Basic linked-list problem... should be LC easy
+// Basic linked-list problem... should be LC easy or medium
 
 /**
  * Definition for singly-linked list.
