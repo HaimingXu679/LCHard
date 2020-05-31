@@ -2,6 +2,8 @@
 
 // Mathematics solution; ad-hoc
 
+// O(N)
+
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
