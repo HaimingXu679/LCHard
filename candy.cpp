@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/candy/
 
-// ad-hoc
+// Ad-hoc
+
+// O(N)
 
 class Solution {
 public:
