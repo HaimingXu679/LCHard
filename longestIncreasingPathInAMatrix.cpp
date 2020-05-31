@@ -2,6 +2,8 @@
 
 // Dynamic programming solution
 
+// O(N^3)
+
 class Solution {
 public:
     int longestIncreasingPath(vector<vector<int>>& matrix) {
