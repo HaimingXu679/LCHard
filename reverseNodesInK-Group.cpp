@@ -2,6 +2,8 @@
 
 // Basic linked-list problem... should be LC easy or medium
 
+// O(N)
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
