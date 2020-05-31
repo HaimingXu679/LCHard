@@ -2,6 +2,8 @@
 
 // Mathematics solution; ad-hoc
 
+// O(N)
+
 class Solution {
 public:
     int trap(vector<int>& height) {
