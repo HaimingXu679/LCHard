@@ -2,6 +2,8 @@
 
 // Dynamic programming solution
 
+// O(k * N^2)
+
 class Solution {
 public:
     int maxProfit(int k, vector<int>& prices) {
