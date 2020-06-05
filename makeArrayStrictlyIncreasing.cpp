@@ -2,6 +2,8 @@
 
 // Altered knapsack with memoization
 
+// O(N^2)
+
 class Solution {
 public:
     set<int> all;

@@ -2,6 +2,8 @@
 
 // Altered version of Manacher's Algorithm
 
+// O(N)
+
 class Solution {
 public:
     string shortestPalindrome(string s) {
