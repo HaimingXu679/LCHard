@@ -1,9 +1,3 @@
-// https://leetcode.com/problems/word-search-ii/ 
-
-// Backtracking, DFS, Trie 
-
-// O(N ^ 3)
-
 class Solution {
 public:
     set<string> found;
@@ -50,10 +44,7 @@ public:
         for (int i = 0; i < board.size(); i++)
             for (int j = 0; j < board[0].size(); j++)
                 dfs(board, prefix, i, j, "", w2, v);
-        vector<string> ans;
-        set<string>::iterator it;
-        for (it = found.begin(); it != found.end(); it++)
-            ans.push_back(*it);
+        vector<string> ans(found.begin(), found.end());
         return ans;
     }
 };
