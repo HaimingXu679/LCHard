@@ -34,7 +34,6 @@ public:
                 dfs(board, prefix, r, c + 1, current, words, visited);
         }
         visited.erase(make_pair(r, c));
-
     }
     
     vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
