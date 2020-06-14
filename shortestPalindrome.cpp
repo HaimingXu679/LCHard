@@ -13,7 +13,8 @@ public:
         for (int i = 0; i < s.length(); i++)
             temp += s.substr(i, 1) + "#";
         int *p = new int[2 * s.length() + 1], *test = new int[2 * s.length() + 1];
-        for (int i = 0; i < temp.length(); i++) test[i] = p[i] = 0;
+        for (int i = 0; i < temp.length(); i++) 
+            test[i] = p[i] = 0;
         for (int i = 1; i < temp.length() - 1; i++) {
             if (r > i) 
                 p[i] = min(r - i, p[2 * c - i]);
