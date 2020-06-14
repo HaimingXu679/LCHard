@@ -1,2 +1,2 @@
 # Leetcode
-A convenient place to store my solutions for later access
+A place to store my solutions for later access
