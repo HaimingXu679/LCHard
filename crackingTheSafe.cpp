@@ -55,7 +55,6 @@ public:
     
     string crackSafe(int n, int k) {
         createCombinations(n, k , "");
-        set<string>::iterator it;
         backtrack("", "", n, k);
         return ans;
     }
