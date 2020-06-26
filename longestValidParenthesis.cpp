@@ -2,7 +2,7 @@
 
 // Altered knapsack algorithm
 
-// O(N)
+// O(N^2)
 
 class Solution {
 public:
