@@ -1,8 +1,8 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
 
-// Simple heap solution (faster than 80%)
+// Simple heap solution
 
-// O(NlogN)
+// O(NlogN), faster than 80%
 
 /**
  * Definition for singly-linked list.
