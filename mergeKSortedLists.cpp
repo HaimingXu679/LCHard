@@ -1,0 +1,42 @@
+// https://leetcode.com/problems/merge-k-sorted-lists/
+
+// Simple heap solution (faster than 70%)
+
+// O(NlogN)
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    multiset<int> nums;
+    
+    ListNode* createAns() {
+        if (nums.empty()) {
+            return NULL;
+        }
+        ListNode *ans = new ListNode();
+        ans -> val = *nums.begin();
+        nums.erase(nums.begin());
+        ans -> next = createAns();
+        return ans;
+    }
+    
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        for (int i = 0; i < lists.size(); i++) {
+            while (lists[i] != NULL) {
+                nums.insert(lists[i] -> val);
+                lists[i] = lists[i] -> next;
+            }
+        }
+        ListNode *a = createAns();
+        return a;
+    }
+};
