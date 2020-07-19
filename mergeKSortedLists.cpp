@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
 
-// Simple heap solution (faster than 70%)
+// Simple heap solution (faster than 80%)
 
 // O(NlogN)
 
@@ -15,28 +15,22 @@
  * };
  */
 class Solution {
-public:
-    multiset<int> nums;
-    
-    ListNode* createAns() {
-        if (nums.empty()) {
+public:    
+    ListNode* createAns(multiset<int> &nums) {
+        if (nums.empty())
             return NULL;
-        }
         ListNode *ans = new ListNode();
         ans -> val = *nums.begin();
         nums.erase(nums.begin());
-        ans -> next = createAns();
+        ans -> next = createAns(nums);
         return ans;
     }
     
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        for (int i = 0; i < lists.size(); i++) {
-            while (lists[i] != NULL) {
+        multiset<int> nums;
+        for (int i = 0; i < lists.size(); i++)
+            for (; lists[i] != NULL; lists[i] = lists[i] -> next)
                 nums.insert(lists[i] -> val);
-                lists[i] = lists[i] -> next;
-            }
-        }
-        ListNode *a = createAns();
-        return a;
+        return createAns(nums);
     }
 };
