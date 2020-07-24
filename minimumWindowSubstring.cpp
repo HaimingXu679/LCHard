@@ -21,10 +21,9 @@ public:
                     seen.insert(s[j]);
                 j++;
             } else {
-                char temp = window.front();
+                if (required.find(window.front()) != required.end() && ++required[window.front()] > 0)          
+                    seen.erase(window.front());
                 window.pop_front();
-                if (required.find(temp) != required.end() && ++required[temp] > 0)          
-                    seen.erase(temp);
                 i++;
             }
             if (seen.size() == required.size() && (ans.size() > j - i || ans == ""))
