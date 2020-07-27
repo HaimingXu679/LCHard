@@ -2,7 +2,7 @@
 
 // Dynamic programming
 
-// O(N^3), beats 26%
+// O(N^3), faster than 26%
 
 class Solution {
 public:
