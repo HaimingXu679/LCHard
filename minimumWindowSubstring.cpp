@@ -2,7 +2,7 @@
 
 // Two pointers, deque
 
-// O(N), faster than 50%
+// O(N), beats 50%
 
 class Solution {
 public:
