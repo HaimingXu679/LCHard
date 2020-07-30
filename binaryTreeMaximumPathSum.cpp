@@ -2,7 +2,7 @@
 
 // Simple recursive search
 
-// O(N), faster than 75%
+// O(N), beats 75%
 
 /**
  * Definition for a binary tree node.
