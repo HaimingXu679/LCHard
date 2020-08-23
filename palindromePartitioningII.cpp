@@ -11,8 +11,10 @@ public:
         for (int i = 0; i < s.size(); i++)
             checker[i] = new bool[s.size()];
         string copy = "#";
-        for (int i = 0; i < s.size(); i++)
+        for (int i = 0; i < s.size(); i++) {
             copy += s.substr(i, 1) + "#";
+            dp[i] = 0x7fffffff;
+        }
         int *dp = new int[s.size()], *p = new int[copy.size()], right = 0, center = 0;
         for (int i = 0; i < copy.size(); i++)
             p[i] = 0;
@@ -35,17 +37,10 @@ public:
         for (int i = 0; i < copy.size(); i++)
             for (int j = i % 2 == 0 ? 1 : 0; j <= p[i] / 2; j++)
                 checker[(i % 2 == 0 ? i + 1 : i - 1) / 2 - j][(i - 1) / 2 + j] = true;
-        for (int i = s.size() - 1; i >= 0; i--) {
-            dp[i] = 0x7fffffff;
-            for (int j = i; j < s.size(); j++) {
-                if (checker[i][j]) {
-                    if (j == s.size() - 1)
-                        dp[i] = 0;
-                    else
-                        dp[i] = min(dp[j + 1] + 1, dp[i]);
-                }
-            }
-        }
+        for (int i = s.size() - 1; i >= 0; i--)
+            for (int j = i; j < s.size(); j++)
+                if (checker[i][j])
+                    dp[i] = j == s.size() - 1 ? 0 : min(dp[j + 1] + 1, dp[i]);
         return dp[0];
     }
 };
