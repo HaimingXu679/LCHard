@@ -1,8 +1,8 @@
 // https://leetcode.com/problems/reducing-dishes/
 
-// O(NlogN)
-
 // Really simple problem... just reverse the list
+
+// O(NlogN), beats 65%
 
 class Solution {
     public int maxSatisfaction(int[] satisfaction) {
