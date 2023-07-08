@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/description/
+
 class Solution {
 public:
     int getDistance(char letter1, char letter2, unordered_map<char, pair<int, int> >& coordinates) {
